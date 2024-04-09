@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 .like-button {
+  stroke:#7878a3;
   transition: transform 0.3s ease;
 }
 
 .liked .heart-svg {
   fill: red;
   transform: scale(1.1);
+  stroke: none;
 }
 
 /* Transition back when unliked */
 .heart-svg {
   transition: fill 0.3s ease, transform 0.3s ease;
-  fill: gray; /* Default state color */
+  fill: rgb(128, 128, 128); /* Default state color */
 }
 
 .like-button svg {
