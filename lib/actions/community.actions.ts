@@ -69,7 +69,25 @@ export async function fetchCommunityDetails(id: string) {
     throw error;
   }
 }
+exports.likeThread = async (req: { params: { threadId: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { error?: string; message?: string; likes?: any; }): void; new(): any; }; }; }) => {
+  const { threadId } = req.params;
 
+  try {
+    const thread = await Thread.findById(threadId);
+    if (!thread) {
+      return res.status(404).json({ error: 'Thread not found' });
+    }
+
+    // Increment the likes count for the thread
+    thread.likes += 1;
+    await thread.save();
+
+    res.status(200).json({ message: 'Thread liked successfully', likes: thread.likes });
+  } catch (error) {
+    console.error('Error liking thread:', error);
+    res.status(500).json({ error: 'Failed to like thread' });
+  }
+};
 export async function fetchCommunityPosts(id: string) {
   try {
     connectToDB();
@@ -268,6 +286,7 @@ export async function updateCommunityInfo(
     throw error;
   }
 }
+
 
 export async function deleteCommunity(communityId: string) {
   try {

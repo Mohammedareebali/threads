@@ -5,6 +5,8 @@ const threadSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  likes: { type: Number, default: 0 },
+  likedByUsers: [{ type: String }],
   author: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",

@@ -1,6 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.like-button {
+  transition: transform 0.3s ease;
+}
+
+.liked .heart-svg {
+  fill: red;
+  transform: scale(1.1);
+}
+
+/* Transition back when unliked */
+.heart-svg {
+  transition: fill 0.3s ease, transform 0.3s ease;
+  fill: gray; /* Default state color */
+}
+
+.like-button svg {
+  /* Transition for the color change */
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
+
+.liked svg {
+  /* Red color and possibly an animation when liked */
+  fill: red;
+  animation: heartBounce 0.6s ease;
+}
+
+@keyframes heartBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
 
 @layer components {
   /* main */
