@@ -1,8 +1,8 @@
 # Threads: A Next.js Community Interaction Platform
 <p align="center">
-  <img src="./public/assets/introduction.png" alt="Threads Logo" width="200"/>
+  <img src="./public/assets/introduction.png" alt="Threads Logo" />
 </p>
-[image ](./public/assets/introduction.png)
+
 ## Introduction
 
 Threads is a full-stack application built on Next.js 14, offering a sophisticated platform inspired by popular social media interaction models. This project brings a Figma design to life, transforming it into a highly interactive and visually appealing web application. It features an array of functionalities tailored for enhancing community interaction, including user authentication, nested comments, real-time search, notifications, and more. The application is designed to provide a comprehensive toolset for community management, making it an ideal choice for developers looking to explore advanced web development concepts and techniques.
