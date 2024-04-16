@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Threads: A Next.js Community Interaction Platform
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+Threads is a full-stack application inspired by common social interaction platforms but revamped with a modern touch using Next.js 14. The application transitions a Figma design into a real-world web application that includes user interaction, community management, and a host of advanced features such as nested deep comments, real-time search, notifications, and more. If you need help or encounter any issues, our active Discord community of over 27,000 members is ready to assist.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚙️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**
+- **MongoDB**
+- **Shadcn UI**
+- **TailwindCSS**
+- **Clerk**: for robust authentication
+- **Webhooks**
+- **Serverless APIs**
+- **React Hook Form**
+- **Zod**: for data validation
+- **TypeScript**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔋 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Authentication**: Secure logins via Clerk with support for email, password, and social logins (Google and GitHub), coupled with detailed profile management.
+- **Visually Appealing Home Page**: Engages users with a beautifully designed home page that highlights the latest community threads.
+- **Interactive Thread Creation**: Allows users to initiate new discussions within communities.
+- **Advanced Commenting System**: Supports nested commenting to ensure a coherent discussion flow.
+- **User and Community Search**: Features comprehensive search capabilities with pagination for discovering users and communities.
+- **Activity Notifications**: Keeps users engaged with real-time updates when interactions occur on their threads.
+- **Community Management**: Tools for creating communities, managing membership, and customizing community settings.
+- **Real-Time Updates**: Utilizes webhooks for real-time event listening, enhancing the user experience.
+- **Performance and SEO**: Leverages Next.js's server-side rendering for fast performance and better search engine visibility.
+- **File Uploads**: Integrated with UploadThing for smooth media handling.
 
-## Learn More
+### Like Feature
+- **Interactive Like System**: Users can like or unlike threads with a dynamic UI that updates in real-time, reflecting the current state of user interactions.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🤸 Quick Start
+https://threads-sable-phi.vercel.app
