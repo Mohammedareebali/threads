@@ -1,4 +1,7 @@
 # Threads: A Next.js Community Interaction Platform
+<p align="center">
+  <img src="./public/assets/introduction.png" alt="Threads Logo" width="200"/>
+</p>
 [image ](./public/assets/introduction.png)
 ## Introduction
 
